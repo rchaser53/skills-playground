@@ -1,0 +1,15 @@
+logging:
+  enabled: true
+  directory: logs
+  fileNamePattern: "{timestamp}.log"
+  timestampFormat: "%Y%m%d-%H%M%S"
+  encoding: utf-8
+  append: false
+  requiredFields:
+    - Timestamp
+    - User Request
+    - Skill Usage
+    - Final Output
+  skillUsage:
+    noneLabel: none
+    multipleSkillsFormat: list
