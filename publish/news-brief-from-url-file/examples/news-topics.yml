@@ -1,0 +1,27 @@
+output:
+  path: "outputs/{date}/news-brief.md"
+  format: "markdown"
+
+topics:
+  - keyword: "OpenAI"
+    notes: "product launches and official announcements only"
+    search:
+      - "official OpenAI announcements"
+      - "OpenAI product releases March 2026"
+
+  - keyword: "Anthropic"
+    notes: "recent company or model updates"
+    search:
+      - "official Anthropic newsroom"
+      - "Anthropic research March 2026"
+
+  - keyword: "TypeScript"
+    notes: "language releases and official announcements"
+    search:
+      - "official TypeScript release notes"
+      - "TypeScript 6.0 announcement"
+    output: "outputs/{date}/typescript-news.md"
+    urls:
+      - "https://devblogs.microsoft.com/typescript/"
+      - "https://github.com/microsoft/TypeScript/releases"
+      - "https://www.typescriptlang.org/"
